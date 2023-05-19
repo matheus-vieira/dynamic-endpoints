@@ -20,7 +20,7 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-app.MapGet("/", () => "Hello World!");
+app.MapGet("/", () => Results.Redirect("swagger"));
 
 var endpoints = new[] { "Foo", "Xpto", "bar" };
 
